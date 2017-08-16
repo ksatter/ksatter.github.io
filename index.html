@@ -1,45 +1,78 @@
-<!-- HTML Bio with CSS -->
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html lang="en-US">
 
 <head>
-
-  <meta charset="UTF-8">
-  <title>1.2.9 Exercise</title>
-
-  <!-- This critical line points your HTML to the CSS file. Notice the "relative" pathway  -->
-  <link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kathy Satterlee</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-  <header>
-    <h1>Student Bio</h1>
-  </header>
 
-  <div class="container">
+	<header id ="masthead">
+		<div class="container">
+			<a href="index.html" id="logo">Kathy Satterlee</a>
+				<nav>
+					<a href="index.html">About</a>
+					<a href="portfolio.html">Portfolio</a> 
+					<a href="contact.html">Contact</a> 
+				</nav>
+		</div>
+	</header>
+	<!doctype html>
+<html lang="en-US">
 
-    <section id="main-bio">
+<head>
+	<meta charset="UTF-8">
+	<title>Kathy Satterlee</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
 
-      <h2>Kathy Satterlee</h2>
-      <img src="http://placehold.it/200x200" alt="Your Image" id="bio-image">
-      <p>Write a short paragraph or two about yourself, or use placeholder text from <a href="http://www.lipsum.com/">www.lipsum.com</a></p>
+<body>
 
-    </section>
+	<header id ="masthead">
+		<div class="container">
+			<a href="index.html" id="logo">Kathy Satterlee</a>
+				<nav>
+					<a href="index.html">About</a>
+					<a href="portfolio.html">Portfolio</a> 
+					<a href="contact.html">Contact</a> 
+				</nav>
+		</div>
+	</header>
 
-    <section id="contact-info">
+	<div class="container" id="main-container">
+		<section class="main-section">
+				<h1>About Me</h1>
 
-      <h2>Contact Info</h2>
+				<img src="assets/images/profile_pic.jpg" alt="Profile Pic" class="auth-image">
 
-      <ul>
-        <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
-        <li><strong>Github:</strong> <a href="#">sampleName</a></li>
-        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
-      </ul>
+				<p> Hi, I'm Kathy. I'm formerly from Austin, TX and just moved to Atlanta, GA to pursue training (and eventually an awesome carreer) in Web Development. I love books, my wife, and my dogs (not necessarily in that order!). </p>
+				
+				<p> I left school in 1999 and have been working my way up the customer service ladder since then. I recently realized that if I wanted to continue having upward mobility, I needed to add some more technical skills to my resume. After careful consideration, I decided that a career in Web Development was one that would be both engaging and profitable. I researched the available options for training, from four year CS programs to three month crash courses in front-end development. After all of that reserch, it was pretty clear to me that the Ga Tech Coding Bootcamp was the right fit for me and, well, here I am!</p>
+		</section>
 
-    </section>
+		<section class="sidebar">
+			<div id="connect">
+				<h2> Connect With Me </h2>
+				
+				<a href="https://github.com/ksatter/" target=_blank><img src="assets/images/git.png" alt="Github" class="social"></a>
+				<a href="https://www.linkedin.com/in/katheryn-satterlee/" target=_blank><img src="assets/images/li.png" alt="LinkedIn" class="social"></a>
+				<a href="https://stackoverflow.com/users/8413566/katheryn-satterlee?tab=profile" target=_blank><img src="assets/images/overflow.png" alt="Stack Overflow" class="social"></a>
+			</div>
+		</section>
 
-  </div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<h6> &copy; Copyright 2017 Kathy Satterlee</h6>
+		</div>
+	</footer>
 
 </body>
-
 </html>
+
