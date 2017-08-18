@@ -68,13 +68,31 @@
 	"buffers":
 	[
 		{
-			"contents": "body {\n  font-family: Arial, \"Helvetica Neue\", Helvetica, sans-serif;\n  font-size: 18px;\n  line-height: 34px;\n  color: #777;\n  background: url(\"../images/vertical-waves.png\");\n}\n\n* {\n  box-sizing: border-box;\n}\n\n/* general */\n\n.container {\n  width: 95%;\n  max-width: 960px;\n  margin: 0 auto;\n  clear: both;\n}\n\nh1,\nh2,\nh3,\np {\n  margin-bottom: 20px;\n}\n\np:last-child {\n  margin-bottom: 0;\n}\n\nh1,\nh2,\nh3 {\n  font-family: Georgia, Times, \"Times New Roman\", serif;\n  font-weight: 700;\n  color: #4aaaa5;\n}\n\nh1 {\n  padding-bottom: 20px;\n  font-size: 30px;\n  line-height: 49px;\n  border-bottom: 3px solid #ddd;\n}\n\nh2,\nh3 {\n  font-size: 22px;\n}\n\n/* header */\n\n#masthead {\n  position: fixed;\n  z-index: 99;\n  width: 100%;\n  margin: 0 0 30px;\n  overflow: auto;\n  color: #fff;\n  background: #fff;\n  border-bottom: 2px solid #ccc;\n}\n\n#logo {\n  float: left;\n  width: 300px;\n  height: 90px;\n  font-family: Georgia, Times, \"Times New Roman\", serif;\n  font-size: 30px;\n  font-weight: 700;\n  line-height: 90px;\n  color: #fff;\n  text-align: center;\n  text-decoration: none;\n  background: #4aaaa5;\n}\n\nnav {\n  float: right;\n  margin-top: 25px;\n}\n\nnav a {\n  display: inline-block;\n  padding-left: 15px;\n  margin-left: 15px;\n  line-height: 18px;\n  color: #999;\n  text-decoration: none;\n  border-left: 1px solid #efefef;\n}\n\nnav a:first-child {\n  border-left: 0 none;\n}\n\n/* footer */\n\nfooter {\n  padding: 30px 0;\n  clear: both;\n  font-size: 12px;\n  color: #fff;\n  color: #ccc;\n  text-align: center;\n  background: #666;\n  border-top: 8px solid #4aaaa5;\n}\n\n/* sidebar */\n\n.sidebar {\n  float: right;\n  width: 280px;\n  padding: 30px;\n  margin-bottom: 20px;\n  background: #fff;\n  border: 1px solid #ddd;\n  text-align: center;\n}\n\nh3,\n.sidebar h2 {\n  padding-bottom: 20px;\n  margin-bottom: 15px;\n  line-height: 22px;\n  border-bottom: 2px solid #eee;\n  text-align: ;\n}\n\n.social {\n  width: 50px;\n  max-width: 75px;\n  height: auto;\n  margin: 8px 5px 0px;\n  opacity: 0.8;\n}\n\n.social:last-child {\n  margin-right: 0;\n}\n\n/* main */\n\n#main-container {\n  width:95%;\n  padding-top: 130px;\n}\n\n.main-section {\n  float: left;\n  width: calc(100% - 300px);\n  padding: 30px;\n  margin: 0 0 40px;\n  background: #fff;\n  border: 1px solid #ddd;\n}\n\n/* portfolio page */\n\n.work {\n  position: relative;\n  float: left;\n  width: 45%;\n  margin: 20px 0 25px;\n  overflow: auto;\n}\n\n.work:nth-child(even) {\n  margin-right: 40px;\n}\n\n.work:hover img {\n  opacity: 0.8;\n  \n}\n\n.work img {\n  width: 100%;\n  border: 0 none;\n  opacity: 0.5;\n}\n\n.work h3 {\n  position: absolute;\n  bottom: 20px;\n  width: 100%;\n  padding: 15px;\n  margin-bottom: 0;\n  font-weight: 300;\n  line-height: 30px;\n  color: #fff;\n  text-align: center;\n  background: #4aaaa5;\n  border-bottom: 0;\n}\n\n.auth-image {\n  float: left;\n  width: 200px;\n  height: auto;\n  margin-top: 10px;\n  margin-right: 25px;\n}\n\n/* contact page */\n\n#contact-form ul {\n  margin-bottom: 20px;\n}\n\n#contact-form li {\n  margin-bottom: 10px;\n}\n\nlabel,\ninput[type=text],\ninput[type=email],\ntextarea {\n  display: block;\n  width: 100%;\n}\n\ninput[type=text],\ninput[type=email],\ntextarea {\n  height: 35px;\n  padding: 0 10px;\n  font-size: 14px;\n  border: 1px solid #ddd;\n}\n\ntextarea {\n  height: 200px;\n}\n\ninput[type=submit] {\n  padding: 10px 30px;\n  font-size: 18px;\n  color: #fff;\n  cursor: pointer;\n  background: #4aaaa5;\n  border: 0 none;\n}\n\n@media only screen and (max-width: 640px) {\n\n  /* for testing\n  body {\n    background-color:red;\n  }\n\n  */\n  \n  /*header stacked and fixed*/\n\n  #masthead {\n    position: absolute;\n    margin: 0 auto;\n    clear:both;\n    text-align: center;\n    padding: 0;\n  }\n  \n  #logo {\n    width: 100%;\n  } \n\n  #masthead .container {\n    width: 100%;\n  }\n\n  nav {\n      width: 100%;\n    margin: 0;\n    padding: 5px;\n    text-align: center;\n  }\n\n  nav a{\n    display: inline-flex;\n    margin: 0px 25px;\n    border: none;\n  }\n\n  /*Main Content Full width*/\n  \n  .main-section {\n    float: none;\n    width: 95%;\n    margin: 0 auto;\n    margin-top: 30px;\n    overflow: auto;\n  }\n  \n  .sidebar {\n    float: left;\n    width: 95%;\n    margin-left: 15px;\n    margin-top: 15px;\n    text-align: left;\n  }\n\n  .auth-image{\n    width: 100%;\n    float: left;\n    clear: both;\n  }\n\n  /*Portfolio Single column*/\n\n  .work {\n    float: left;\n    width: 100% ;\n  }\n}\n\n@media only screen and (min-width: 641px) and (max-width: 768px){\n\n /* for testing \n  body {\n    background-color:blue;\n  }\n  */\n\n  /*header stacked*/\n\n  #masthead {\n    width: 100%;\n    clear:both;\n    padding: 0;\n  }\n\n   #logo {\n    width: 100%;\n  } \n\n   #masthead .container {\n    width: 100%;\n  }\n\n  nav {\n    width: 100%;\n    margin: 0;\n    padding: 5px;\n    text-align: center;\n  }\n\n  nav a{\n    display: inline-flex;\n    margin: 0px 25px;\n    border: none;\n  }\n\n  /*Main Content full width*/\n  \n  .main-section {\n    float: none;\n    width: 95%;\n    margin: 0 auto;\n    margin-top: 30px;\n    overflow: auto;\n  }\n  \n  .sidebar {\n    float: left;\n    width: 95%;\n    margin-left: 15px;\n    margin-top: 15px;\n    text-align: left;\n  }\n  \n\n  .auth-image{\n    width: 100%;\n    float: left;\n    clear: both;\n  }\n}\n\n@media only screen and (min-width:768px) and (max-width: 980px){\n  \n  /*for testing\n  body {\n    background-color:green;\n  }\n  */\n\n   /*Portfolio Single column*/\n\n  .work {\n    float: left;\n    width: 100% ;\n  }\n}",
-			"file": "style.css",
-			"file_size": 5670,
-			"file_write_time": 131473863610905572,
+			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n  \n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>K Satterlee</title>\n  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\" integrity=\"sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u\" crossorigin=\"anonymous\">\n   <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css\">\n   <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js\"></script>\n  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\n</head>\n\n<body>\n\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-lg-12\">\n        <div class=\"bs-component\">\n          <nav class=\"navbar navbar-inverse\">\n            <div class=\"container-fluid\">\n              <div class=\"navbar-header\">\n                <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-2\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                </button>\n\n                <a class=\"navbar-brand\" href=\"index.html\">Kathy Satterlee</a>\n                </div>\n\n                <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-2\">\n                  <ul class=\"nav navbar-nav navbar-right\">\n                  <li><a href=\"index.html\">Home</a></li>\n                  <li><a href=\"portfolio.html\">Portfolio</a></li>\n                  <li><a href=\"contact.html\">Contact</a></li>\n                  </ul>\n                </div> \n              </div>\n            </div>\n          </nav>\n        </div>\n      </div>\n    </div>\n  </div>\n  \n  \n\n</body>\n</html>\n\n\n\n\n",
+			"file": "/C/Users/kberi/Desktop/School/Repositories/Bootstrap-Portfolio/portfolio.html",
+			"file_size": 3332,
+			"file_write_time": 131474787912135887,
 			"settings":
 			{
-				"buffer_size": 5274,
+				"buffer_size": 1973,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/kberi/Desktop/School/Repositories/Bootstrap-Portfolio/contact.html",
+			"settings":
+			{
+				"buffer_size": 1967,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/kberi/Desktop/School/Repositories/Bootstrap-Portfolio/index.html",
+			"settings":
+			{
+				"buffer_size": 3952,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -84,25 +102,6 @@
 			"settings":
 			{
 				"buffer_size": 2866,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/Users/kberi/Desktop/School/Repositories/Responsive-Portfolio/portfolio.html",
-			"settings":
-			{
-				"buffer_size": 2083,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/Users/kberi/Desktop/School/Repositories/Responsive-Portfolio/contact.html",
-			"settings":
-			{
-				"buffer_size": 1898,
-				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -142,22 +141,29 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/C/Users/kberi/Desktop/School/Repositories/Bootstrap-Portfolio/assets",
+		"/C/Users/kberi/Desktop/School/Repositories/Bootstrap-Portfolio/assets/css",
+		"/C/Users/kberi/Desktop/School/Repositories/Bootstrap-Portfolio/assets/images"
+	],
 	"file_history":
 	[
-		"/C/Users/kberi/Desktop/School/Repositories/Responsive-Portfolio/coming-soon.html",
+		"/C/Users/kberi/Desktop/School/Repositories/Bootstrap-Portfolio/index.html",
+		"/C/Users/kberi/Desktop/School/Repositories/Responsive-Portfolio/contact.html",
 		"/C/Users/kberi/Desktop/School/Repositories/Responsive-Portfolio/portfolio.html",
+		"/C/Users/kberi/Desktop/School/Repositories/Responsive-Portfolio/assets/css/style.css",
+		"/C/Users/kberi/Desktop/School/Repositories/Responsive-Portfolio/index.html",
+		"/C/Users/kberi/Desktop/School/Repositories/Responsive-Portfolio/coming-soon.html",
 		"/C/Users/kberi/Desktop/School/08-01-2017-GT-Atlanta-Class-Repository-FSF/fsf-content/01-class-content/02-css-bootstrap/02-Homework/Instructions/Images/768-index.jpg",
 		"/C/Users/kberi/Desktop/School/08-01-2017-GT-Atlanta-Class-Repository-FSF/fsf-content/01-class-content/01-html-git-css/02-Homework/Solutions/recommended-homework-solution/assets/css/style.css",
-		"/C/Users/kberi/Desktop/School/Repositories/Responsive-Portfolio/assets/css/style.css",
 		"/C/Users/kberi/Desktop/School/08-01-2017-GT-Atlanta-Class-Repository-FSF/fsf-content/01-class-content/03-javascript/01-Activities/12-ArraysActivity/Unsolved/arrays-activity.html",
 		"/C/Users/kberi/Desktop/School/08-01-2017-GT-Atlanta-Class-Repository-FSF/fsf-content/01-class-content/03-javascript/01-Activities/09-ConditionalActivity/conditional.html",
 		"/C/Users/kberi/Desktop/School/08-01-2017-GT-Atlanta-Class-Repository-FSF/fsf-content/01-class-content/03-javascript/01-Activities/08-ConditionalDemo/conditional-demo.html",
 		"/C/Users/kberi/Desktop/School/08-01-2017-GT-Atlanta-Class-Repository-FSF/fsf-content/01-class-content/03-javascript/01-Activities/05-PizzaConsole/Unsolved/pizza-variables-2.html",
 		"/C/Users/kberi/Desktop/School/08-01-2017-GT-Atlanta-Class-Repository-FSF/fsf-content/01-class-content/03-javascript/01-Activities/03-PizzaVariables/Unsolved/.eslintrc.json",
 		"/C/Users/kberi/Desktop/School/08-01-2017-GT-Atlanta-Class-Repository-FSF/fsf-content/01-class-content/03-javascript/01-Activities/07-PromptSushi/Unsolved/prompt-sushi.html",
-		"/C/Users/kberi/Desktop/School/Repositories/Responsive-Portfolio/index.html",
 		"/C/Users/kberi/Desktop/School/08-01-2017-GT-Atlanta-Class-Repository-FSF/fsf-content/01-class-content/03-javascript/01-Activities/03-PizzaVariables/Unsolved/pizza-variables.html",
-		"/C/Users/kberi/Desktop/School/Repositories/Responsive-Portfolio/contact.html",
 		"/C/Users/kberi/Desktop/School/08-01-2017-GT-Atlanta-Class-Repository-FSF/fsf-content/01-class-content/03-javascript/01-Activities/01-CodeDissection/js-dissect.html",
 		"/C/Users/kberi/Desktop/School/Repositories/Basic-Portfolio/index.html",
 		"/C/Users/kberi/Desktop/School/Repositories/Basic-Portfolio/assets/css/style.css",
@@ -232,6 +238,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Satterlee",
 			"image",
 			"main"
 		],
@@ -251,49 +258,103 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "style.css",
+					"file": "/C/Users/kberi/Desktop/School/Repositories/Bootstrap-Portfolio/portfolio.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5274,
+						"buffer_size": 1973,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5053,
-								5053
+								1951,
+								1951
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 890.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"file": "/C/Users/kberi/Desktop/School/08-01-2017-GT-Atlanta-Class-Repository-FSF/fsf-content/01-class-content/02-css-bootstrap/02-Homework/Instructions/Images/980-portfolio.jpg",
-					"semi_transient": true,
-					"stack_index": 4,
-					"type": "image"
+					"buffer": 1,
+					"file": "/C/Users/kberi/Desktop/School/Repositories/Bootstrap-Portfolio/contact.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1967,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1774,
+								1774
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 787.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "/C/Users/kberi/Desktop/School/Repositories/Responsive-Portfolio/index.html",
+					"buffer": 2,
+					"file": "/C/Users/kberi/Desktop/School/Repositories/Bootstrap-Portfolio/index.html",
 					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3952,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3560,
+								3560
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3820.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/kberi/Desktop/School/Repositories/Responsive-Portfolio/index.html",
+					"semi_transient": true,
 					"settings":
 					{
 						"buffer_size": 2866,
@@ -303,8 +364,8 @@
 						"selection":
 						[
 							[
-								325,
-								325
+								2707,
+								2269
 							]
 						],
 						"settings":
@@ -313,68 +374,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/Users/kberi/Desktop/School/Repositories/Responsive-Portfolio/portfolio.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2083,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								245,
-								245
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3270.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/Users/kberi/Desktop/School/Repositories/Responsive-Portfolio/contact.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1898,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								285,
-								285
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -457,7 +460,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 257.0,
+	"side_bar_width": 240.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
