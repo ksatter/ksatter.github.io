@@ -1,5 +1,5 @@
 body, html {
-  height: 100%;
+  min-height: 100%;
   color: #26252B;
 }
 
@@ -66,16 +66,39 @@ h1 {
 color: #8F9EB7;
 }
 
-.aside {
+.aside{
   position:sticky;
   top: 0;
-  padding: 1em;
   color: #6479A0;
 }
 .aside-col {
   background-color: #26252B;
 }
-
+.navbar{
+  background-color: #26252B;
+  position:sticky;
+  top:0;
+  z-index: 5;
+}
+.navbar-brand{
+  margin-right: 0;
+}
+.navbar-toggler-icon{
+  color: #6479A0;
+}
+.navbar ul{
+  width: 100%
+}
+.aside .navbar{
+  margin-top: auto;
+  margin-bottom: auto
+}
+.aside .nav-item{
+  font-size: x-large;
+}
+.navbar-nav{
+  width: 100%
+}
 .content-col {
   margin-left: 0px;
   font-family: 'Open Sans';
