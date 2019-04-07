@@ -68,7 +68,7 @@
               <li class="menuItem active"><a href="#navhome">Home</a></li>
               <li class="menuItem"><a href="#navprofile">Profile</a></li>
               <li class="menuItem"><a href="#navresume">Resume</a></li>
-              <li class="menuItem"><a href="#navportfolio">Portfolio</a></li>
+              <li class="menuItem hidden"><a href="#navportfolio">Portfolio</a></li>
               <li class="menuItem"><a href="#navcontact">Contact</a></li>
             </ul>
           </div>
@@ -151,7 +151,7 @@
                 <!-- end menu block (resume) -->
 
                 <!-- start menu block (portfolio) -->
-                <a href="#navportfolio" class="menu-li">
+                <a href="#navportfolio hidden" class="menu-li">
                   <!-- img menu block -->
                   <span class="foto">
                     <img src="./assets/img/menu/style1/portfolio.png" class="menu-img" data-img-name="portfolio" alt="portfolio">
@@ -160,19 +160,6 @@
                   <span class="name">Portfolio</span>
                 </a>
                 <!-- end menu block (portfolio) -->
-
-
-
-                <!-- start menu block (contact) -->
-                <a href="#navcontact" class="menu-li">
-                  <!-- img menu block -->
-                  <span class="foto">
-                    <img src="./assets/img/menu/style1/contact.png" class="menu-img" data-img-name="contact" alt="Contact">
-                  </span>
-                  <!-- name menu block -->
-                  <span class="name">Contact</span>
-                </a>
-                <!-- end menu block (contact) -->
               </div>
             </div>
             <!-- end row -->
@@ -597,7 +584,7 @@
       <!-- End Resume section -->
 
       <!-- Start Portfolio section -->
-      <div class="portfolio-header" id="navportfolio">
+      <div class="portfolio-header hidden" id="navportfolio">
         <!-- Start Head section -->
         <header class="head">
           <!-- start container -->
@@ -621,7 +608,7 @@
         <!-- End Head section -->
 
         <!-- Start Portfolio section -->
-        <div class="portfolio-section padding-block">
+        <div class="portfolio-section padding-block hidden">
           <!-- start container -->
           <div class="container">
             <!-- start row -->
@@ -704,114 +691,7 @@
       <!-- End Portfolio section -->
 
 
-      <!-- Start Contact section -->
-      <div class="contact" id="navcontact">
-        <!-- Start Head section -->
-        <header class="head">
-          <!-- start container -->
-          <div class="container">
-            <!-- start row -->
-            <div class="row">
-              <div class="col-xs-12 col-sm-5 col-lg-5 text-right">
-                <img class="logo-page" src="./assets/img/contact_l.png" alt="Ukieweb">
-              </div>
-              <div class="col-xs-12 col-sm-7 col-lg-7">
-                <!-- Title Page -->
-                <h2 class="title">Contact</h2>
-                <!-- Description Page -->
-                <h4 class="sub-title">Get in touch with me</h4>
-              </div>
-            </div>
-            <!-- end row -->
-          </div>
-          <!-- end container -->
-        </header>
-        <!-- End Head section -->
 
-        <!-- Start Content section -->
-        <section class="content padding-block border-bottom">
-          <!-- start container -->
-          <div class="container">
-            <!-- start row -->
-            <div class="row">
-              <div class="col-xs-12 col-sm-12 col-lg-6 padding-bottom">
-                <h3 class="title title-contact">Contact info</h3>
-                <div class="block-grey">
-                  <table>
-                    <tr>
-                      <td class="font-weight-m width-td">Location</td>
-                      <td>Austin. Tx</td>
-                    </tr>
-                    <tr>
-                      <td class="font-weight-m">Phone</td>
-                      <td><a href="tel:5129251285">512.925.1285</a></td>
-                    </tr>
-                    <tr>
-                      <td class="font-weight-m">E-mail</td>
-                      <td><a href="mailto:me@ksatter.com">me@ksatter.com</a></td>
-                    </tr>
-                    <tr>
-                      <td class="font-weight-m">Website</td>
-                      <td><a href="www.ksatter.com">ksatter.com</a></td>
-                    </tr>
-                  </table>
-                  <!-- social icon -->
-                  <div class="social">
-                    <ul class="animated" data-animation="fadeIn" data-animation-delay="600">
-                      <!-- social icons -->
-                      <li><a class="ukie-icons hover-animate" href="https://www.linkedin.com/in/ksatter/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                      <li><a class="ukie-icons hover-animate" href="https://github.com/ksatter" target="_blank"><i class="fa fa-github-alt"></i></a></li>
-                      </li>
-
-                    </ul>
-                  </div>
-                  <!-- end social icon -->
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-12 col-lg-6">
-                <h3 class="title title-contact">Contact form</h3>
-                <!-- Start Contact Form -->
-                <div class="contact-form">
-                  <form action="assets/php/contact.php" id="contact-form" method="post">
-                    <input type="text" id="user-name" name="user-name" value="" placeholder="Name" />
-                    <input type="email" id="user-email" name="user-email" value="" placeholder="Email" />
-                    <input type="hidden" id="user-status" name="user-status" value="1" />
-                    <textarea id="user-message" name="user-message" placeholder="Message"></textarea>
-                    <div class="footer-form">
-                      <input type="submit" id="submit-btn" class="btn btn-color hover-animate" value="Send Message" />
-                      <div class="info-message-form">
-                        <p>Please fill out all the fields!</p>
-                        <span class="close-msg"><i class="fa fa-close"></i></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <!-- End Contact Form -->
-              </div>
-            </div>
-            <!-- end row -->
-          </div>
-          <!-- end container -->
-        </section>
-        <!-- End Content section -->
-
-        <!-- Start Map section -->
-        <div class="contact-map padding-block text-center">
-          <!-- start container -->
-          <div class="container">
-            <!-- start row -->
-            <div class="row">
-              <div class="col-xs-12 col-sm-12 col-lg-12">
-                <div id="map" class="map"></div>
-              </div>
-            </div>
-            <!-- end row -->
-          </div>
-          <!-- end container -->
-        </div>
-        <!-- End Map section -->
-      </div>
-      <!-- End Contact section -->
 
       <!-- Start Footer section -->
       <footer class="footer">
@@ -821,28 +701,28 @@
           <div class="row">
             <!-- start phone number -->
             <div class="col-xs-12 col-sm-6 col-lg-3">
-              <a href="#" class="hover-animate">
-                <span class="ukie-icons hover-animate"><i class="fa fa-phone"></i></span> +38 012-3456-7890
+              <a href="tel:5129251285" class="hover-animate">
+                <span class="ukie-icons hover-animate"><i class="fa fa-phone"></i></span> 512.925.1285
               </a>
             </div>
             <!-- end phone number -->
             <!-- start email -->
             <div class="col-xs-12 col-sm-6 col-lg-3">
-              <a href="#" class="hover-animate">
-                <span class="ukie-icons hover-animate"><i class="fa fa-paper-plane"></i></span> info@yourdomain.com
+              <a href="mailto: me2ksatter.com" target="_blank"class="hover-animate">
+                <span class="ukie-icons hover-animate"><i class="fa fa-paper-plane"></i></span> me@ksatter.com
               </a>
             </div>
             <!-- end email -->
             <!-- start address -->
             <div class="col-xs-12 col-sm-6 col-lg-3">
               <a href="#" class="hover-animate">
-                <span class="ukie-icons hover-animate"><i class="fa fa-map-marker"></i></span> 44 King St, Melbourne VIC
+                <span class="ukie-icons hover-animate"><i class="fa fa-map-marker"></i></span> Austin, Tx
               </a>
             </div>
             <!-- end address -->
             <!-- start Copyright -->
             <div class="col-xs-12 col-sm-6 col-lg-3 text-right">
-              <span class="copyright">Copyright © 2016 All right reserved</span>
+              <span class="copyright">Copyright © 2019 All right reserved</span>
             </div>
             <!-- end Copyright -->
           </div>
